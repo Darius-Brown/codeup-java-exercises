@@ -32,7 +32,9 @@ public class HelloWorld {
 //    Why does assigning the value 3.14 to a variable declared as a long not compile, but assigning an integer value does?
 //        casting
 //    Change your code to declare myNumber as a float. Assign the value 3.14 to it. What happens? What are two ways we could fix this?
-        float myNumber = 3.14F;  //add the F for float at the end of number
+        //float myNumber = 3.14F;  //add the F for float at the end of number
+        float myNumber;
+        myNumber = (float) 3.14;
 //    Copy and paste the following code blocks one at a time and execute them
 
 //int x = 5;
@@ -76,7 +78,10 @@ public class HelloWorld {
 //y -= x;
 
 //What happens if you assign a value to a numerical variable that is larger (or smaller) than the type can hold? What happens if you increment a numeric variable past the type's capacity?
-//
+
+        int z = Integer.MAX_VALUE;
+        z+=1;
+        System.out.println("z = " + z);
 //Hint: Integer.MAX_VALUE is a class constant (we'll learn more about these later) that holds the maximum value for the int type.
     }
 };

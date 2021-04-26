@@ -40,8 +40,28 @@ public class ControlFlowExercises {
                 }
         }
 
-        //LETTER GRADE OUTPUT
+        //TABLE OF POWERS
         Scanner sc = new Scanner(System.in);
+
+        System.out.println("What number would you like to go up to?\n");
+        int stopAt = sc.nextInt();
+
+        System.out.println("Here is your table!\n \n number | squared | cubed\n ------ | ------- | ----- ");
+        for(int i = 1; i< stopAt; i++) {
+            //System.out.println(i);
+            float squared = i * i;
+            float cubed = i * i * i;
+            System.out.println( i + "       |" + squared + "    |" + cubed);
+        }
+
+
+
+
+
+
+
+        //LETTER GRADE OUTPUT
+
 
         System.out.println("What is your overall grade? 1 - 100");
         int grade = sc.nextInt();

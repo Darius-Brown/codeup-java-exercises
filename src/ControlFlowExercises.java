@@ -47,7 +47,7 @@ public class ControlFlowExercises {
         int stopAt = sc.nextInt();
 
         System.out.println("Here is your table!\n \n number | squared | cubed\n ------ | ------- | ----- ");
-        for(int i = 1; i< stopAt; i++) {
+        for(int i = 1; i<= stopAt; i++) {
             //System.out.println(i);
             float squared = i * i;
             float cubed = i * i * i;

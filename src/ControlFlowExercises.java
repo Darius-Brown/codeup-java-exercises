@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
@@ -37,6 +39,29 @@ public class ControlFlowExercises {
                     System.out.println(i);
                 }
         }
+
+        //LETTER GRADE OUTPUT
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("What is your overall grade? 1 - 100");
+        int grade = sc.nextInt();
+
+        if (grade >= 88) {
+            System.out.println("You got got an A! :)");
+        } else if (grade <=87 && grade >= 80) {
+            System.out.println("You got a B!");
+        } else if (grade <=79 && grade >= 67) {
+            System.out.println("You got a C!");
+        } else if (grade <=66 && grade >= 60) {
+            System.out.println("You got a D!");
+        } else if (grade <=59) {
+            System.out.println("You got a F! :(");
+        }
+
+
+
+
+
 
     }
 }

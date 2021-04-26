@@ -14,7 +14,7 @@ public class ConsoleExercise {
         String threeWords = sc.nextLine();
 
         System.out.println("Type a sentence please.");
-        String newSentence = sc.nextLine();
+        String newSentence = sc.next();
 
         System.out.println("Length of the classroom?");
         double length = sc.nextInt();
@@ -24,7 +24,7 @@ public class ConsoleExercise {
 
         double area = length * width;
         double perimeter = (length + width) * 2;
-        System.out.printf("Area is " + "area", area);
-
+        System.out.printf("Area is " + "%f\n", area);
+        System.out.printf("Perimeter is " + "%f", perimeter);
     }
 }

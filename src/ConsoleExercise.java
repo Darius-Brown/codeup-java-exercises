@@ -14,7 +14,7 @@ public class ConsoleExercise {
         String threeWords = sc.nextLine();
 
         System.out.println("Type a sentence please.");
-        String newSentence = sc.next();
+        String newSentence = sc.nextLine();
 
         System.out.println("Length of the classroom?");
         double length = sc.nextInt();

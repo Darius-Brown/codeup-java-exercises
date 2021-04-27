@@ -21,7 +21,7 @@ public class MethodsExercises {
         System.out.println("Please enter a number between 1 & 10.");
 //        double factorial = sc.nextInt();
 //        System.out.println(factorial);
-        System.out.println(getFactorial(sc.nextInt()));
+        getFactorial(sc.nextInt());
     }
 
 //    //no inputs and no outputs
@@ -58,11 +58,11 @@ public class MethodsExercises {
 //
 //    // Recursion
 //
-//    public static void countToLoop(int num) {
-//        for (int i = 0; i <= num; i++){
-//            System.out.println(i);
-//        }
-//    }
+    public static void countToLoop(int num) {
+        for (int i = 0; i <= num; i++){
+            System.out.println(i);
+        }
+    }
 //
 //    public static int countTo100(int num) {
 //        System.out.println(num);
@@ -107,14 +107,10 @@ public class MethodsExercises {
 //        } return System.out.println("finished");
 //    }
 
-    public static float getFactorial(int fac){
-        long result = 1;
-//        if (fac <= 10 & fac >=1){
-            for (int i = 1; i < fac; i++) {
-                return i *= result;
-            }
-//        }
-        return result;
+    public static void getFactorial(int fac){
+        for (int i = 0; i <= fac; i++){
+            System.out.println(i);
+        }
     }
 
 

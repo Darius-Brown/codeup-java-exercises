@@ -17,7 +17,8 @@ public class MethodsExercises {
         System.out.println(Multiply(10, 5));
         System.out.println(Divide(100, 10));
         System.out.println(Modulus(100,1));
-        //System.out.println(getInteger(1, 10));
+        System.out.println("Please enter a number between 1 & 20.");
+        getInteger(1, 10);
         System.out.println("Please enter a number between 1 & 10.");
 //        double factorial = sc.nextInt();
 //        System.out.println(factorial);
@@ -99,16 +100,15 @@ public class MethodsExercises {
         return result;
     }
 
-//    public static void getInteger(int min, int max) {
-//        if (min >= 1) {
-//            return 1;
-//        } else if (max <= 20) {
-//            return 20;
-//        } return System.out.println("finished");
-//    }
+    public static void getInteger(int min, int max) {
+        if (min >= 1 && max <= 20) {
+            System.out.println("Access Granted!");
+        } System.out.println("finished");
+    }
 
     public static void getFactorial(int fac){
         for (int i = 0; i <= fac; i++){
+
             System.out.println(i);
         }
     }

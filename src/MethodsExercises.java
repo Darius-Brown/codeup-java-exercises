@@ -109,7 +109,7 @@ public class MethodsExercises {
     public static void getFactorial(int fac){
         for (int i = 0; i <= fac; i++){
 
-            System.out.println(i);
+            System.out.println(i * i);
         }
     }
 

@@ -11,7 +11,7 @@ public class Bob {
         System.out.println("Whoa, chill out!");
     } else if (question.endsWith("?")){
         System.out.println("Sure.");
-    } else if (question == " "){
+    } else if (question.equals("")){
         System.out.println("Fine. Be that way!");
     } else {System.out.println("Whatever."); }
 

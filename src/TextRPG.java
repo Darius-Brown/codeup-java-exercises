@@ -19,9 +19,9 @@ public class TextRPG {
 
 
     public static void startGame(String input){
-        if (input == "yes"){
+        if (input.equals("yes")){
             System.out.println("Then LET US BEGIN!");
-        } else if (input == input){
+        } else if (input.equals("no")){
             System.out.println("TOO BAD ..in you go");
         }
 

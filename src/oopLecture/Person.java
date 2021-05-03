@@ -7,6 +7,28 @@ public class Person {
         return lastName + ", " + firstName + " has joined the chat!";
     }
 
+public static class Arithmetic {
+        // static property
+        public static double pi = 3.14159;
+
+        // static methods
+        public static int add(int x, int y) {
+            return x + y;
+        }
+
+        public static int multiply(int x, int y) {
+            return x * y;
+        }
+    }
+
+public static class MathTest {
+        public static void main(String[] args) {
+            //Arithmetic.pi; // 3.14159
+
+            System.out.println(Arithmetic.add(5, 5));      // 10
+            System.out.println(Arithmetic.multiply(5, 5)); // 25
+        }
+    }
 
 
     public static void main(String[] args){
@@ -32,30 +54,7 @@ public class Person {
         System.out.println("db.firstName = " + db.firstName);
         System.out.println("db.joinsChat() = " + db.joinsChat());
 
-        System.out.println("zoro = " + zoro.firstName);
-
-        class Arithmetic {
-            // static property
-            public static double pi = 3.14159;
-
-            // static methods
-            public static int add(int x, int y) {
-                return x + y;
-            }
-
-            public static int multiply(int x, int y) {
-                return x * y;
-            }
-        }
-
-        class MathTest {
-            public static void main(String[] args) {
-                Arithmetic.pi; // 3.14159
-
-                Arithmetic.add(5, 5);      // 10
-                Arithmetic.multiply(5, 5); // 25
-            }
-        }
+        System.out.println("Zoro's name = " + zoro.firstName);
 
 
     }

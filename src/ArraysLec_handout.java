@@ -2,6 +2,13 @@ import java.util.Arrays;
 
 public class ArraysLec_handout {
 
+    public static class Person{
+
+    }
+    public static class addPerson {
+
+    }
+
     public static void main(String[] args) {
 
         //~*~ Welcome to Java Arrays[] ~*~

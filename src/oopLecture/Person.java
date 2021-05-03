@@ -31,26 +31,26 @@ package oopLecture;
 //        }
 //    }
 
-public class Person{
-    public String firstName;
-    public String lastName;
+//public class Person{
+//    public String firstName;
+//    public String lastName;
+//
+//    public String getName(){
+//    //TODO: return the person's name
+//        return lastName + firstName;
+//    }
+//
+//        public void setName(String name){
+//    //TODO: change the name property to the passed value
+//            Person  = new Person();
+//        }
+//        public void sayHello(){
+//    //TODO: print a message to the console using the person's name
+//            System.out.println(firstName);
+//        }
 
-    public String getName(){
-    //TODO: return the person's name
-        return lastName + ", " + firstName + " has joined the chat!";
-    }
 
-        public void setName(String name){
-    //TODO: change the name property to the passed value
-            new Person();
-        }
-        public void sayHello(){
-    //TODO: print a message to the console using the person's name
-            System.out.println();
-        }
-
-
-    public static void main(String[] args){
+//    public static void main(String[] args){
 //        Person db = new Person();
 //        System.out.println(db);
 //
@@ -74,14 +74,14 @@ public class Person{
 //        System.out.println("db.joinsChat() = " + db.joinsChat());
 //
 //        System.out.println("Zoro's name = " + zoro.firstName);
-        Person person1 = new Person("John");
-        Person person2 = new Person("John");
-        System.out.println(person1.getName().equals(person2.getName()));
-        System.out.println(person1 == person2);
-
-
-
-    }
-
-
-}
+//        Person person1 = new Person("John");
+//        Person person2 = new Person("John");
+//        System.out.println(person1.getName().equals(person2.getName()));
+//        System.out.println(person1 == person2);
+//
+//
+//
+//    }
+//
+//
+//}

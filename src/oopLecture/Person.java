@@ -1,87 +1,47 @@
 package oopLecture;
 
-//public class Person {
-//    public String firstName;
-//    public String lastName;
-//    public String joinsChat(){
-//        return lastName + ", " + firstName + " has joined the chat!";
-//
-//    }
-//
-//public static class Arithmetic {
-//        // static property
-//        public static double pi = 3.14159;
-//
-//        // static methods
-//        public static int add(int x, int y) {
-//            return x + y;
-//        }
-//
-//        public static int multiply(int x, int y) {
-//            return x * y;
-//        }
-//    }
-//
-//public static class MathTest {
-//        public static void main(String[] args) {
-//            //Arithmetic.pi; // 3.14159
-//
-//            System.out.println(Arithmetic.add(5, 5));      // 10
-//            System.out.println(Arithmetic.multiply(5, 5)); // 25
-//        }
-//    }
+import java.util.Scanner;
 
-//public class Person{
-//    public String firstName;
-//    public String lastName;
-//
-//    public String getName(){
-//    //TODO: return the person's name
-//        return lastName + firstName;
-//    }
-//
-//        public void setName(String name){
-//    //TODO: change the name property to the passed value
-//            Person  = new Person();
-//        }
-//        public void sayHello(){
-//    //TODO: print a message to the console using the person's name
-//            System.out.println(firstName);
-//        }
+public class Person {
+    public String firstName;
+    public String lastName;
+    public String joinsChat(){
+        return lastName + ", " + firstName + " has joined the chat!";
+    }
+
+    public static long worldPop = 7_860_000_000L;
+
+    public static void main(String[] args){
+        Person ken = new Person();
+        Person vanessa = new Person();
+        Person douglas = new Person();
+
+        Scanner scanner = new Scanner(System.in);
+
+        String myName = "Ken";
+        ken.firstName = myName;
+        ken.lastName = "Howell";
+
+        vanessa.firstName = "Vanessa";
+        vanessa.lastName = "Noriega";
+
+        douglas.firstName = "Douglas";
+        douglas.lastName = "Hirsh";
+
+//        System.out.println("ken.firstName = " + ken.firstName);
+//        System.out.println("ken.lastName = " + ken.lastName);
+//        System.out.println("ken.joinsChat() = " + ken.joinsChat());
+
+        //World population + class/object fields
+        System.out.println("worldPop = " + Person.worldPop);
+        Person.worldPop += 1; //a new PERSON was created, we need to adjust our worldPop!!!
+        System.out.println("worldPop = " + Person.worldPop);
+
+        //Hey, we can do this (instanceObject.classField, but ehhh, let's try not to
+        System.out.println("douglas.worldPop = " + douglas.worldPop);
+
+//        System.out.println("Person.firstName = " + Person.firstName); //This will not compile - instant error and the java program will not continue until refactored.
+    }
 
 
-//    public static void main(String[] args){
-//        Person db = new Person();
-//        System.out.println(db);
-//
-//        String myName = "Darius";
-//
-//        db.firstName = myName;
-//        db.lastName = "Brown";
-//
-//        System.out.println("db.firstName = " + db.firstName);
-//        System.out.println("db.lastName = " + db.lastName);
-//
-//        Person vanessa = new Person();
-//        vanessa.firstName = "Vanessa";
-//        vanessa.lastName = "Noriega";
-//
-//        Person zoro = new Person();
-//        zoro.firstName = "Roronoa";
-//        zoro.lastName = "Zoro";
-//
-//        System.out.println("db.firstName = " + db.firstName);
-//        System.out.println("db.joinsChat() = " + db.joinsChat());
-//
-//        System.out.println("Zoro's name = " + zoro.firstName);
-//        Person person1 = new Person("John");
-//        Person person2 = new Person("John");
-//        System.out.println(person1.getName().equals(person2.getName()));
-//        System.out.println(person1 == person2);
-//
-//
-//
-//    }
-//
-//
-//}
+}

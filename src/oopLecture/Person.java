@@ -1,49 +1,50 @@
 package oopLecture;
 
-import java.util.Scanner;
-
 public class Person {
     public String firstName;
     public String lastName;
+    public String middleName;
 
+    public Person() {
+        System.out.println("A Person is being created!");
+    }
+
+    public String sayHello() {
+        return String.format("Hello from %s %s!", firstName, lastName);
+    }
 
     public String joinsChat(){
-        return lastName + ", " + firstName + " has joined the chat!";
+        return lastName + ", " + middleName + " " + firstName + " has joined the chat!";
     }
 
-    public static long worldPop = 7_860_000_000L;
+    public static long worldPopulation = 7_500_000_000L;
+    public String name;
+    public String starter;
 
     public static void main(String[] args){
-        Person ken = new Person();
-        Person vanessa = new Person();
-        Person douglas = new Person();
+        Person dano = new Person();
+        dano.firstName = "Daniel";
+        dano.lastName = "Dano";
+        dano.middleName = "D";
+        System.out.println(dano.sayHello());
+        System.out.println(dano.joinsChat());
 
-        Scanner scanner = new Scanner(System.in);
 
-        String myName = "Ken";
-        ken.firstName = myName;
-        ken.lastName = "Howell";
+        Person pokemonLeagueChampion = new Person();
+        pokemonLeagueChampion.name = "Lance";
+        pokemonLeagueChampion.starter = "Drantini";
 
-        vanessa.firstName = "Vanessa";
-        vanessa.lastName = "Noriega";
+        Person.worldPopulation += 1;
 
-        douglas.firstName = "Douglas";
-        douglas.lastName = "Hirsh";
+        System.out.println(Person.worldPopulation);
 
-//        System.out.println("ken.firstName = " + ken.firstName);
-//        System.out.println("ken.lastName = " + ken.lastName);
-//        System.out.println("ken.joinsChat() = " + ken.joinsChat());
+        System.out.println(pokemonLeagueChampion.name);
+        System.out.println("The Champion " + pokemonLeagueChampion.name + " started out with only one companion, " + pokemonLeagueChampion.starter);
 
-        //World population + class/object fields
-        System.out.println("worldPop = " + Person.worldPop);
-        Person.worldPop += 1; //a new PERSON was created, we need to adjust our worldPop!!!
-        System.out.println("worldPop = " + Person.worldPop);
+        Person Mike = new Person();
+        Person Tom = new Person();
 
-        //Hey, we can do this (instanceObject.classField, but ehhh, let's try not to
-        System.out.println("douglas.worldPop = " + douglas.worldPop);
-
-//        System.out.println("Person.firstName = " + Person.firstName); //This will not compile - instant error and the java program will not continue until refactored.
-    }
+ }
 
 
 }

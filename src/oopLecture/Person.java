@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Person {
     public String firstName;
     public String lastName;
+
+
     public String joinsChat(){
         return lastName + ", " + firstName + " has joined the chat!";
     }

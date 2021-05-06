@@ -22,6 +22,7 @@ public class Person {
     public String starter;
 
     public static void main(String[] args){
+
         Person dano = new Person();
         dano.firstName = "Daniel";
         dano.lastName = "Dano";

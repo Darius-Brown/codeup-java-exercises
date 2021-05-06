@@ -15,27 +15,45 @@ public class Input {
             return input;
     }
 
-    public boolean yesNo(){
+    static boolean yesNo(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Type Yes or No");
         String input = sc.nextLine();
-        if(input.equalsIgnoreCase("yes")|| input.equalsIgnoreCase("y")){
+        if (input.equalsIgnoreCase("yes")|| input.equalsIgnoreCase("y")){
             return true;
         } else return false;
     }
 
-//    public int getInt(int min, int max){
-//
-//    }
-//    public int getInt(){
-//
-//    }
-//    public double getDouble(double min, double max){
-//
-//    }
-//    public double getDouble(){
-//
-//    }
+    static int getInt(int min, int max){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number between 0 and 25");
+        int input = sc.nextInt();
+            if (input >= min && input <= max){
+                System.out.println("The entered number is in range");
+            } else return getInt(0,25);
+
+        return input;
+    }
+    static int getInt(){
+        System.out.println("Type any int");
+        Scanner sc = new Scanner(System.in);
+        return sc.nextInt();
+    }
+    static double getDouble(double min, double max){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a decimal number between 0 and 25");
+        double input = sc.nextDouble();
+        if (input >= min && input <= max){
+            System.out.println("The entered number is in range");
+        } else return getDouble(0,25);
+        return input;
+    }
+    static double getDouble(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Type any decimal number");
+        double input = sc.nextDouble();
+        return input;
+    }
 
 }
 //

@@ -3,10 +3,12 @@ package util;
 import java.util.Scanner;
 
 public class Input {
+//    create a class named Input that has a private property named scanner
+    private Scanner scanner;
 
-    Scanner sc = new Scanner(System.in);
     
-    String getString(){
+     String getString(){
+        Scanner sc = new Scanner(System.in);
         System.out.println("type input here");
         String input = sc.next();
         if(input.equals("")){
@@ -17,6 +19,7 @@ public class Input {
     }
 
     public boolean yesNo(){
+        Scanner sc = new Scanner(System.in);
         System.out.println("Type Yes or No");
         String input = sc.next();
         if(input.equalsIgnoreCase("yes")|| input.equalsIgnoreCase("y")){

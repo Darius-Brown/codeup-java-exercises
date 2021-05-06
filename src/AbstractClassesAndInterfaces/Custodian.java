@@ -10,4 +10,16 @@ public class Custodian extends Employee{
     public String work(){
         return "Sweeping the office floor...";
     }
+
+    public String morningMeeting(){
+        return "there is no meeting";
+    }
+
+    public String lunchTime() {
+        return "noon";
+    }
+
+    public int dailyPay() {
+        return 200;
+    }
 }

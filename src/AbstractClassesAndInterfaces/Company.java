@@ -5,7 +5,7 @@ public class Company {
     public static void main(String[] args) {
         Employee numberBot = new Accountant("numberBot", "Accounting", 001);
         Employee realHuman = new Accountant("John", "Accounting", 002);
-        Employee cleaner = new Custodian("Juan", "Maintenence", 003);
+        Employee cleaner = new Custodian("Juan", "Maintenance", 003);
 
         System.out.println(numberBot.name);
         System.out.println(numberBot.id);
@@ -16,5 +16,10 @@ public class Company {
         System.out.println(realHuman.id);
 
         System.out.println(cleaner.work());
+
+
+        System.out.println(cleaner.dailyPay());
+        System.out.println(realHuman.morningMeeting());
+        System.out.println(numberBot.lunchTime());
     }
 }

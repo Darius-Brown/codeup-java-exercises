@@ -13,18 +13,20 @@ public class GradesApplication {
         students.put("Chris", new ArrayList<>(Arrays.asList(90, 100, 80, 90, 100, 70)) );
         students.put("Jack", new ArrayList<>(Arrays.asList(50, 70, 50, 70, 100, 60)) );
 
-        System.out.println(students.get("Darius"));
-        System.out.println(students.get("Mike"));
-        System.out.println(students.get("Chris"));
-        System.out.println(students.get("Jack"));
+        System.out.println("Darius");
+        System.out.println("Mike");
+        System.out.println("Chris");
+        System.out.println("Jack");
 
         System.out.println("Who's grades do you want to search for?");
         String key = sc.next();
         System.out.println(students.get(key));
         System.out.println("Continue?");
-        if (sc.next().equalsIgnoreCase("yes")){
+        while (sc.next().equalsIgnoreCase("yes")) {
+            // code block to be executed
             System.out.println("Who's grades do you want to search for?");
             System.out.println(students.get(sc.next()));
+            System.out.println("Continue?");
         }
     }
 }

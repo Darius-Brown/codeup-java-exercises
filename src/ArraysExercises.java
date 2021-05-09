@@ -17,6 +17,10 @@ public class ArraysExercises {
 
     }
 
+    static String findAll(){
+        return "";
+    }
+
     public static Person[] addPerson(Person[] people, Person person){
         Person[] newPersons = Arrays.copyOf(people, people.length);
         newPersons[newPersons.length -1] = person;

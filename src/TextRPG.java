@@ -20,7 +20,7 @@ public class TextRPG {
 
     public static void startGame(String input){
         if (input.equals("yes")){
-            System.out.println("Then LET US BEGIN!");
+            System.out.println("Then BEGIN!");
         } else if (input.equals("no")){
             System.out.println("TOO BAD ..in you go");
         }

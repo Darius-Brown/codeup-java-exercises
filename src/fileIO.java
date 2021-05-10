@@ -2,6 +2,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -52,11 +54,26 @@ public class fileIO {
 
         System.out.println("groceriesPath = " + groceriesPath);
         
-        List<String> groceries = Arrays.asList("coffee","milk", "sugar");
+        List<String> groceries = Arrays.asList("Orange Juice");
         System.out.println("groceries = " + groceries);
 
-        Files.write(groceriesPath, groceries);
+        Files.write(groceriesPath, groceries, StandardOpenOption.APPEND);
 
+
+        //Replace
+
+        List<String> lines = Files.readAllLines(Paths.get(directory, filename));
+        List<String> newList = new ArrayList<>();
+
+        for (String line : lines) {
+            if (line.equals("milk")) {
+                newList.add("cream");
+                continue;
+            }
+            newList.add(line);
+        }
+
+        Files.write(Paths.get(directory, filename), newList);
 
 
 

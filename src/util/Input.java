@@ -8,11 +8,19 @@ public class Input {
     private Scanner scanner;
 
     
-    static String getString(){
+    static String getString(String s){
         Scanner sc = new Scanner(System.in);
+        Integer integer = Integer.valueOf(s);
+        Double aDouble = Double.valueOf(s);
         System.out.println("type input here");
         String input = sc.next();
+        try {
             return input;
+        } catch (ArithmeticException e) {
+            return String.valueOf(integer);
+        } catch (Exception e){
+            return String.valueOf(aDouble);
+
     }
 
     static boolean yesNo(){

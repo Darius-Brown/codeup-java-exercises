@@ -2,6 +2,8 @@ package movie;
 
 public class Movie {
     public Movie(String citizen_kane, String drama) {
+
+        //Starting movie app
     }
 
 //    We are going to build an application that keeps track of movies and displays them by category.

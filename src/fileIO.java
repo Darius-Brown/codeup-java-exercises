@@ -66,8 +66,8 @@ public class fileIO {
         List<String> newList = new ArrayList<>();
 
         for (String line : lines) {
-            if (line.equals("milk")) {
-                newList.add("cream");
+            if (line.equals("coffee")) {
+                newList.add("Blue Mountain Coffee");
                 continue;
             }
             newList.add(line);

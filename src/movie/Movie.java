@@ -44,7 +44,7 @@ public class Movie {
 
     }
 
-    }
+
 //    We are going to build an application that keeps track of movies and displays them by category.
 //
 //    Inside of src, create a directory named movies. Create all of the classes described below in this directory.

@@ -1,11 +1,50 @@
 package movie;
 
+import java.nio.file.Files;
+import java.nio.file.StandardOpenOption;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
 public class Movie {
     public Movie(String citizen_kane, String drama) {
 
         //Starting movie app
     }
 
+    public static void main(String[] args) {
+        int[][] primes = new int[3][3];
+        primes[2][2] = 1;
+
+        System.out.println(primes[1][2]);
+
+        //switch case user input
+        Scanner sc = new Scanner(System.in);
+        int input;
+        do {
+            input = sc.nextInt();
+            switch (input) {
+                case 1:
+
+                    break;
+                case 2:
+
+                    break;
+                case 3:
+
+                    break;
+                case 4:
+
+                    break;
+                case 5:
+                    System.out.println("Closing application..");
+                    break;
+            }
+        } while (input != 5);
+
+    }
+
+    }
 //    We are going to build an application that keeps track of movies and displays them by category.
 //
 //    Inside of src, create a directory named movies. Create all of the classes described below in this directory.

@@ -23,9 +23,10 @@ public class Movie {
         int input;
         do {
             input = sc.nextInt();
+            Movie[] movies = MoviesArray.findAll();
             switch (input) {
                 case 1:
-
+                    System.out.println("Exiting");
                     break;
                 case 2:
 
@@ -37,7 +38,7 @@ public class Movie {
 
                     break;
                 case 5:
-                    System.out.println("Closing application..");
+
                     break;
             }
         } while (input != 5);
